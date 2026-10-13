@@ -1,0 +1,293 @@
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 25px 18px;
+    box-sizing: border-box;
+
+    border-right: 1px solid #eeeeee;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.05);
+
+    transition: 0.3s ease;
+}
+
+
+/* ================= LOGO ================= */
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.sidebar-logo span {
+    font-size: 28px;
+}
+
+.sidebar-logo h2 {
+    margin: 0;
+    font-size: 23px;
+    color: #222;
+    cursor: pointer;
+}
+
+
+/* ================= MENU ================= */
+
+.sidebar-menu {
+    flex: 1;
+}
+
+.menu-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    margin: 0 0 12px 10px;
+    letter-spacing: 0.5px;
+}
+
+.menu-item {
+    width: 100%;
+    min-height: 45px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 0 14px;
+    margin-bottom: 8px;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+    color: #555;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 9px;
+
+    transition: 0.3s ease;
+}
+
+.menu-item span {
+    width: 22px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.menu-item:hover {
+    background: #f5f6f8;
+    color: #222;
+}
+
+.menu-item.active {
+    background: #f1f5ef;
+    color: #4d7c45;
+    font-weight: 600;
+}
+
+.settings-title {
+    margin-top: 25px;
+}
+
+
+/* ================= BOTTOM ================= */
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+
+/* ================= ADMIN PROFILE ================= */
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 10px;
+
+    border-top: 1px solid #eeeeee;
+
+    cursor: pointer;
+}
+
+.admin-img {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #f1f1f1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: #555;
+}
+
+.admin-profile h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #222;
+}
+
+.admin-profile p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #999;
+}
+
+
+/* ================= LOGOUT ================= */
+
+.logout-btn {
+    width: 100%;
+
+    border: none;
+    background: #fff1f1;
+
+    color: #ef3340;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ffe0e0;
+}
+
+
+/* ================= CLOSE BUTTON ================= */
+
+.close-sidebar {
+    display: none;
+
+    position: absolute;
+    right: 12px;
+    top: 12px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+/* ================= HAMBURGER ================= */
+
+.menu-btnsidebar {
+    display: none;
+
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    z-index: 1100;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+
+/* ================= OVERLAY ================= */
+
+.overlay {
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 999;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .menu-btnsidebar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-sidebar {
+        display: block;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .sidebar {
+        width: 250px;
+        padding: 22px 15px;
+    }
+
+    .sidebar-logo {
+        margin-bottom: 28px;
+    }
+
+    .sidebar-logo h2 {
+        font-size: 21px;
+        margin: 40px 0 0 0px;
+        color: red;
+    }
+
+    .menu-item {
+        min-height: 43px;
+        font-size: 13px;
+    }
+}

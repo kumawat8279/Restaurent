@@ -1,0 +1,284 @@
+/* =========================
+   FOOD BG SLIDER
+========================= */
+
+.food-bg-slider {
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+
+    position: relative;
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   SLIDES
+========================= */
+
+.food-bg-slides {
+    display: flex;
+
+    width: 200%;
+    height: 500px;
+
+    position: relative;
+
+    animation: foodBgSlide 6s ease-in-out infinite;
+}
+
+
+/* =========================
+   SINGLE SLIDE
+========================= */
+
+.food-bg-slide {
+    width: 50%;
+    height: 500px;
+
+    flex-shrink: 0;
+
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BACKGROUND IMAGES
+========================= */
+
+.food-bg-slide1 {
+    background-image: url("../images/slider-bg-1.jpg");
+}
+
+.food-bg-slide2 {
+    background-image: url("../images/slider-bg-2.jpg");
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes foodBgSlide {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================
+   TEXT BOX
+========================= */
+
+.food-bg-box {
+    position: absolute;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+
+    border-radius: 4px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   BOX 1
+========================= */
+
+.food-bg-box1 {
+    top: 40px;
+    left: 6%;
+
+    width: 400px;
+
+    padding: 5px 15px;
+
+    background: #ff1761;
+
+    font-size: 40px;
+
+    z-index: 3;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =========================
+   BOX 2
+========================= */
+
+.food-bg-box2 {
+    top: 80px;
+    left: 22%;
+
+    width: 350px;
+
+    padding: 10px;
+
+    background: #ffc438;
+
+    font-size: 30px;
+
+    z-index: 2;
+
+    transform: rotate(-10deg);
+}
+
+
+/* =========================
+   BOX 3
+========================= */
+
+.food-bg-box3 {
+    top: 160px;
+    left: 19%;
+
+    width: 320px;
+
+    padding: 8px 20px;
+
+    background: #b5df4a;
+
+    font-size: 30px;
+
+    z-index: 4;
+
+    transform: rotate(3deg);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .food-bg-slider {
+        width: 100%;
+        height: 350px;
+    }
+
+    .food-bg-slides {
+        height: 350px;
+    }
+
+    .food-bg-slide {
+        height: 350px;
+    }
+
+    .food-bg-box {
+        white-space: normal;
+        max-width: 80%;
+    }
+
+    .food-bg-box1 {
+        top: 55px;
+        left: 8%;
+
+        width: auto;
+
+        padding: 8px 12px;
+
+        font-size: 28px;
+    }
+
+    .food-bg-box2 {
+        top: 115px;
+        left: 18%;
+
+        width: auto;
+
+        padding: 7px 12px;
+
+        font-size: 21px;
+    }
+
+    .food-bg-box3 {
+        top: 170px;
+        left: 15%;
+
+        width: auto;
+
+        padding: 7px 12px;
+
+        font-size: 19px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .food-bg-slider {
+        width: 100%;
+        height: 350px;
+    }
+
+    .food-bg-slides {
+        height: 350px;
+    }
+
+    .food-bg-slide {
+        height: 350px;
+    }
+
+    .food-bg-box {
+        max-width: 75%;
+    }
+
+    .food-bg-box1 {
+        top: 45px;
+        left: 5%;
+
+        font-size: 25px;
+    }
+
+    .food-bg-box2 {
+        top: 110px;
+        left: 15%;
+
+        font-size: 19px;
+    }
+
+    .food-bg-box3 {
+        top: 170px;
+        left: 12%;
+
+        font-size: 17px;
+    }
+}

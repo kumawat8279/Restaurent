@@ -1,0 +1,121 @@
+.website-settings-page {
+    margin-left: 250px;
+    min-height: 100vh;
+    padding: 35px;
+    background: #f7f8fc;
+    box-sizing: border-box;
+}
+
+.website-settings-content {
+    width: 100%;
+}
+
+.website-settings-header {
+    margin-bottom: 30px;
+}
+
+.website-settings-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.website-settings-header p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+.website-settings-card {
+    max-width: 850px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.website-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.website-input label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.website-input input,
+.website-input textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.website-input input:focus,
+.website-input textarea:focus {
+    border-color: #ef3340;
+}
+
+.website-input textarea {
+    height: 100px;
+    resize: none;
+}
+
+.save-website-btn {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #ef3340;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.save-website-btn:hover {
+    opacity: 0.9;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .website-settings-page {
+        margin-left: 0;
+        padding: 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .website-settings-page {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .website-settings-header h1 {
+        font-size: 25px;
+    }
+
+    .website-settings-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .website-settings-page {
+        padding: 15px;
+    }
+
+    .website-settings-header h1 {
+        font-size: 22px;
+    }
+
+    .website-settings-card {
+        padding: 15px;
+    }
+}

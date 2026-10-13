@@ -1,0 +1,101 @@
+.location{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    
+    
+}
+.map{
+    width: 50%;
+}
+
+.form{
+    width: 40%;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+.button{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) {
+
+    .location {
+        width: 90%;
+        gap: 25px;
+    }
+
+    .map {
+        width: 50%;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    .form {
+        width: 45%;
+    }
+
+    .form input,
+    .form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 768px) {
+
+    .location {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        gap: 30px;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form input {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        
+    }
+
+    .form textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px;
+        box-sizing: border-box;
+        resize: none;
+        margin-bottom: 15px;
+    }
+      .button {
+        padding: 5px;
+        font-size: 17px;
+    }
+}

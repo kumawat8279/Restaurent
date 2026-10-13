@@ -1,0 +1,389 @@
+/* ================================
+   PRODUCTS PAGE
+================================ */
+
+.products-page {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+    background: #f8f9fc;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.small-title {
+    margin: 10px 0 0 50px;
+    color: #ff7043;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.products-header h1 {
+    margin: 5px 0;
+    font-size: 30px;
+    color: #222;
+}
+
+.sub-title {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+
+/* ================================
+   BACK LINK
+================================ */
+
+.back-linkpro {
+    text-decoration: none;
+}
+
+.back-arrowpro {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.back-arrowpro:hover {
+    color: #ff7043;
+}
+
+
+/* ================================
+   ADD PRODUCT BUTTON
+================================ */
+
+.add-product-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #ff7043;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-product-btn:hover {
+    background: #f4511e;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   TABLE CONTAINER
+================================ */
+
+.table-container {
+    width: 100%;
+    background: white;
+    border-radius: 14px;
+    overflow-x: auto;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* ================================
+   TABLE
+================================ */
+
+.table-container table {
+    width: 100%;
+    min-width: 1100px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+/* ================================
+   TABLE HEADER
+================================ */
+
+.table-container thead {
+    background: #fafafa;
+}
+
+.table-container th {
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 12px;
+    color: #777;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+}
+
+
+/* Column widths */
+
+.table-container th:nth-child(1) {
+    width: 45px;
+}
+
+.table-container th:nth-child(2) {
+    width: 100px;
+}
+
+.table-container th:nth-child(3) {
+    width: 150px;
+}
+
+.table-container th:nth-child(4) {
+    width: 100px;
+}
+
+.table-container th:nth-child(5) {
+    width: 90px;
+}
+
+.table-container th:nth-child(6) {
+    width: 90px;
+}
+
+.table-container th:nth-child(7) {
+    width: 200px;
+}
+
+.table-container th:nth-child(8) {
+    width: 100px;
+}
+
+
+/* ================================
+   TABLE BODY
+================================ */
+
+.table-container tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: 0.2s;
+}
+
+.table-container tbody tr:hover {
+    background: #fff8f5;
+}
+
+.table-container td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #444;
+    vertical-align: middle;
+}
+
+
+/* ================================
+   PRODUCT IMAGE
+================================ */
+
+.product-image {
+    width: 65px !important;
+    height: 65px !important;
+    min-width: 65px;
+    max-width: 65px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+
+.product-image img {
+    width: 65px !important;
+    height: 65px !important;
+    max-width: 65px !important;
+    max-height: 65px !important;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================================
+   PRODUCT NAME
+================================ */
+
+.table-container td:nth-child(3) {
+    font-weight: 600;
+    color: #222;
+}
+
+
+/* ================================
+   CATEGORY
+================================ */
+
+.category {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #fff0e9;
+    color: #ff7043;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+/* ================================
+   PRICE
+================================ */
+
+.table-container td:nth-child(5) {
+    font-weight: 700;
+    color: #222;
+    white-space: nowrap;
+}
+
+
+/* ================================
+   RATING
+================================ */
+
+.table-container td:nth-child(6) {
+    white-space: nowrap;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.table-container td:nth-child(7) {
+    color: #777;
+    line-height: 1.4;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ================================
+   ACTIONS
+================================ */
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 9px;
+    margin-right: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+
+/* Edit */
+
+.edit-btn {
+    background: #fff3d6;
+}
+
+.edit-btn:hover {
+    background: #ffe5a3;
+    transform: translateY(-2px);
+}
+
+
+/* Delete */
+
+.delete-btn {
+    background: #ffe7e7;
+}
+
+.delete-btn:hover {
+    background: #ffd0d0;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+.table-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+    .products-page {
+        margin-left: 220px;
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .products-page {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .products-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-product-btn {
+        width: 100%;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+    .back-arrowpro {
+         display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 15px 30px 30px 330px;
+    font-size: 14px;
+    color: #555;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .products-page {
+        padding: 15px;
+    }
+
+    .products-header h1 {
+        font-size: 24px;
+    }
+}

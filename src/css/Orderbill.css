@@ -1,0 +1,498 @@
+/* =========================================
+   ORDER BILL PAGE
+========================================= */
+
+.orderbill {
+    min-height: 100vh;
+    background: #f6f7fb;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.orderbill-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.orderbill-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #222;
+}
+
+.orderbill-header p {
+    margin-top: 8px;
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.orderbill-container {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+
+/* =========================================
+   ORDER SECTION
+========================================= */
+
+.order-section {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.order-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 20px;
+    font-size: 21px;
+    color: #222;
+}
+
+.order-section h2 svg {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   DELIVERY INFORMATION
+========================================= */
+
+.delivery-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.delivery-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.delivery-item svg {
+    font-size: 22px;
+    margin-top: 2px;
+}
+
+.delivery-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.delivery-item span {
+    font-size: 13px;
+    color: #888;
+}
+
+.delivery-item strong {
+    font-size: 15px;
+    color: #333;
+    word-break: break-word;
+}
+
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+.order-products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-product {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.product-image {
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #f2f2f2;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h3 {
+    margin: 0 0 7px;
+    font-size: 17px;
+    color: #222;
+}
+
+.product-details p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #777;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+
+/* =========================================
+   PRICE SUMMARY
+========================================= */
+
+.price-summary {
+    width: 100%;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.discount-row span:last-child {
+    font-weight: bold;
+}
+
+.price-summary hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 18px 0;
+}
+
+.total-row {
+    font-size: 20px;
+    color: #222;
+}
+
+
+/* =========================================
+   PAYMENT OPTIONS
+========================================= */
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.payment-option:hover {
+    border-color: #aaa;
+}
+
+.payment-option.active {
+    border-color: #222;
+    background: #fafafa;
+}
+
+.payment-option input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.payment-option strong {
+    display: block;
+    font-size: 16px;
+    color: #222;
+}
+
+.payment-option p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* =========================================
+   QR CODE
+========================================= */
+
+.qr-section {
+    text-align: center;
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px dashed #ccc;
+    border-radius: 12px;
+    background: #fafafa;
+}
+
+.qr-section h3 {
+    margin: 0 0 18px;
+    color: #222;
+}
+
+.qr-section svg {
+    max-width: 180px;
+    height: auto;
+}
+
+.qr-section p {
+    margin: 15px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PAYMENT STATUS
+========================================= */
+
+.payment-status-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+}
+
+.payment-status-box span {
+    font-size: 15px;
+    color: #555;
+}
+
+.payment-status-box strong {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PLACE ORDER BUTTON
+========================================= */
+
+.place-order-btn {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #222;
+    color: white;
+    transition: 0.2s;
+}
+
+.place-order-btn:hover {
+    background: #000;
+}
+
+.place-order-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   BACK TO CART BUTTON
+========================================= */
+
+.back-shopping-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.back-shopping-btn:hover {
+    background: #f2f2f2;
+}
+
+
+/* =========================================
+   NO ORDER FOUND
+========================================= */
+
+.order-error {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.order-error h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: #222;
+}
+
+.order-error p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.order-error button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .orderbill {
+        padding: 25px 15px;
+    }
+
+    .orderbill-header h1 {
+        font-size: 27px;
+    }
+
+    .delivery-info {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+    .order-section {
+        padding: 20px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .orderbill {
+        padding: 20px 10px;
+    }
+
+    .orderbill-header {
+        margin-bottom: 20px;
+    }
+
+    .orderbill-header h1 {
+        font-size: 24px;
+    }
+
+    .orderbill-header p {
+        font-size: 13px;
+    }
+
+    .order-section {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .order-section h2 {
+        font-size: 18px;
+    }
+
+    .order-product {
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .product-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .product-details {
+        min-width: 0;
+    }
+
+    .product-details h3 {
+        font-size: 15px;
+    }
+
+    .product-price {
+        width: 100%;
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .delivery-item {
+        padding: 12px;
+    }
+
+    .payment-status-box {
+        padding: 15px;
+    }
+
+    .total-row {
+        font-size: 18px;
+    }
+
+    .place-order-btn {
+        font-size: 15px;
+        padding: 14px;
+    }
+
+}

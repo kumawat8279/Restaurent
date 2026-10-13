@@ -1,0 +1,172 @@
+.success-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.success-card {
+    width: 100%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 45px 40px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #e9f8ee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px;
+}
+
+.success-card h1 {
+    margin: 0;
+
+    font-size: 28px;
+}
+
+.success-message {
+    color: #777;
+
+    line-height: 1.6;
+
+    margin: 12px auto 28px;
+
+    max-width: 420px;
+}
+
+.success-details {
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    padding: 5px 18px;
+
+    margin-bottom: 25px;
+
+    text-align: left;
+}
+
+.success-detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    gap: 20px;
+}
+
+.success-detail-row:last-child {
+    border-bottom: none;
+}
+
+.success-detail-row span {
+    color: #777;
+
+    font-size: 14px;
+}
+
+.success-detail-row strong {
+    font-size: 15px;
+
+    text-align: right;
+}
+
+.success-buttons {
+    display: flex;
+
+    gap: 12px;
+}
+
+.success-buttons button {
+    flex: 1;
+
+    border: none;
+
+    padding: 14px 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.view-orders-btn {
+    background: #222;
+
+    color: white;
+}
+
+.continue-btn {
+    background: #eeeeee;
+
+    color: #222;
+}
+
+.success-buttons button:hover {
+    opacity: 0.85;
+}
+
+
+@media (max-width: 600px) {
+
+    .success-card {
+        padding: 35px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 23px;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+    .success-detail-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .success-detail-row strong {
+        text-align: left;
+    }
+}
