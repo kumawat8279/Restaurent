@@ -14,7 +14,7 @@ export default function Wishlist() {
     let [wishlistdata, setwishlistdata] = useState([])
 
     let getwishlistdata = () => {
-        axios.get("http://localhost:8080/getwishlist").then((res) => {
+        axios.get("https://restaurentbackend.vercel.app/getwishlist").then((res) => {
             if (res.data.status) {
                 setwishlistdata(res.data.mywishlistpro)
             }
@@ -36,7 +36,7 @@ export default function Wishlist() {
             width: "300px"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.post("http://localhost:8080/deletewishlist", { dltwishlist: item, }).then((res) => {
+                axios.post("https://restaurentbackend.vercel.app/deletewishlist", { dltwishlist: item, }).then((res) => {
                     if (res.data.status) {
                         Swal.fire({
                             title: "Deleted!",
@@ -53,7 +53,7 @@ export default function Wishlist() {
     }
 
     let clearwishlist = () => {
-        axios.post("http://localhost:8080/dltwishmany").then((res) => {
+        axios.post("https://restaurentbackend.vercel.app/dltwishmany").then((res) => {
             if (res.data.status) {
                 setwishlistdata([])
             }
@@ -63,7 +63,7 @@ export default function Wishlist() {
     }
 
     let addtocart = (item) => {
-        axios.post("http://localhost:8080/allprocart", { products: item }).then((res) => {
+        axios.post("https://restaurentbackend.vercel.app/allprocart", { products: item }).then((res) => {
             if (res.data.status) {
                 Swal.fire({
                     toast: true,

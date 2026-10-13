@@ -13,7 +13,7 @@ export default function Dashboard() {
     let [totalsales, settotalsales] = useState(0)
 
     let gettotalsalse = () => {
-        axios.get("http://localhost:8080/gettotalsalse").then((res) => {
+        axios.get("https://restaurentbackend.vercel.app/gettotalsalse").then((res) => {
             if (res.data.status) {
                 settotalsales(res.data.totalsalse)
             }
@@ -30,7 +30,7 @@ export default function Dashboard() {
 
     let gettotalexpense = () => {
 
-        axios.get("http://localhost:8080/gettotalexpense")
+        axios.get("https://restaurentbackend.vercel.app/gettotalexpense")
             .then((res) => {
 
                 if (res.data.status) {
@@ -45,7 +45,7 @@ export default function Dashboard() {
     };
 
     let getoders = () => {
-        axios.get("http://localhost:8080/allorders").then((res) => {
+        axios.get("https://restaurentbackend.vercel.app/allorders").then((res) => {
             if (res.data.status) {
                 setOrders(res.data.orders)
             }

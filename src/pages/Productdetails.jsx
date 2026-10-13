@@ -31,7 +31,7 @@ export default function Productdetails() {
 
         console.log("FINAL REVIEW:", finalreviewdata);
 
-        axios.post("http://localhost:8080/addreview", {
+        axios.post("https://restaurentbackend.vercel.app/addreview", {
             reviewdata: finalreviewdata
         })
             .then((res) => {
@@ -62,7 +62,7 @@ export default function Productdetails() {
     // getreview
 
     function getreview() {
-        axios.get("http://localhost:8080/getreview")
+        axios.get("https://restaurentbackend.vercel.app/getreview")
             .then((res) => {
 
                 console.log("GET REVIEW RESPONSE:", res.data);
@@ -92,7 +92,7 @@ export default function Productdetails() {
 
     let addproduct = (item) => {
 
-        axios.get("http://localhost:8080/allprocart", {
+        axios.get("https://restaurentbackend.vercel.app/allprocart", {
             products: item
         })
             .then((res) => {
@@ -146,7 +146,7 @@ export default function Productdetails() {
     
     //    console.log("DELETE ID =", id);
 
-    axios.post("http://localhost:8080/dltmyreview", {
+    axios.post("https://restaurentbackend.vercel.app/dltmyreview", {
         dltreview: id
     })
     .then((res) => {

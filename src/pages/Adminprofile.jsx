@@ -25,7 +25,7 @@ export default function Adminprofile() {
 
    let saveprofile = () => {
 
-    axios.put("http://localhost:8080/updateuser", {
+    axios.put("https://restaurentbackend.vercel.app/updateuser", {
         oldemail: saveduser.email,
         firstname: userdata.firstname,
         email: userdata.email,

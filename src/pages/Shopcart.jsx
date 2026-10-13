@@ -25,7 +25,7 @@ export default function Shopcart() {
     const getcartproducts = () => {
 
         axios
-            .get("http://localhost:8080/getcartpro")
+            .get("https://restaurentbackend.vercel.app/getcartpro")
             .then((res) => {
 
                 console.log("Cart Response:", res.data);
@@ -103,7 +103,7 @@ export default function Shopcart() {
     const getlocationinfo = () => {
 
         axios
-            .get("http://localhost:8080/getlocation")
+            .get("https://restaurentbackend.vercel.app/getlocation")
             .then((res) => {
 
                 console.log("Location Response:", res.data);
@@ -172,7 +172,7 @@ export default function Shopcart() {
 
                     axios
                         .post(
-                            "http://localhost:8080/deletecartpro",
+                            "https://restaurentbackend.vercel.app/deletecartpro",
                             {
                                 prodeletecart: item
                             }
@@ -221,7 +221,7 @@ export default function Shopcart() {
     const deletelocation = () => {
 
         axios
-            .post("http://localhost:8080/deleteloc")
+            .post("https://restaurentbackend.vercel.app/deleteloc")
             .then((res) => {
 
                 console.log(

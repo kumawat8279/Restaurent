@@ -30,7 +30,7 @@ export default function Myaccount() {
             return;
         }
 
-        axios.post("http://localhost:8080/myorders", {
+        axios.post("https://restaurentbackend.vercel.app/myorders", {
             email: user.email
         })
             .then((res) => {

@@ -17,7 +17,7 @@ export default function Products() {
     let [userproducts, setuserproducts] = useState([])
 
     function getproducts() {
-        axios.get("http://localhost:8080/getproducts").then((res) => {
+        axios.get("https://restaurentbackend.vercel.app/getproducts").then((res) => {
             if (res.data.status) {
                 setuserproducts(res.data.myallproducts)
             }
@@ -45,7 +45,7 @@ export default function Products() {
             if (result.isConfirmed) {
 
 
-                axios.post("http://localhost:8080/deletepro", { dltproduct })
+                axios.post("https://restaurentbackend.vercel.app/deletepro", { dltproduct })
                     .then((res) => {
 
                         if (res.data.status) {

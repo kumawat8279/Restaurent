@@ -20,7 +20,7 @@ export default function User() {
 
     let user = JSON.parse(userData);
 
-    axios.post("http://localhost:8080/getcurrentuser", {
+    axios.post("https://restaurentbackend.vercel.app/getcurrentuser", {
         email: user.email
     })
         .then((res) => {
@@ -41,7 +41,7 @@ export default function User() {
 
 
     let deleteuser = (dltuser) => {
-        axios.post("http://localhost:8080/deleteuser",{dltuser}).then((res) => {
+        axios.post("https://restaurentbackend.vercel.app/deleteuser",{dltuser}).then((res) => {
             if (res.data.status) {
                 Swal.fire({
                     title: "Deleted!",

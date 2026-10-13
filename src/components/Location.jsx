@@ -48,7 +48,7 @@ export default function Location() {
             return
         }
 
-        axios.post("http://localhost:8080/location", {
+        axios.post("https://restaurentbackend.vercel.app/location", {
             ...inputdata,
             ...location
         })

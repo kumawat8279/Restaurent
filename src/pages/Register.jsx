@@ -39,7 +39,7 @@ export default function Register() {
             return;
         }
 
-        axios.post("http://localhost:8080/register", { userdata }).then((res) => {
+        axios.post("https://restaurentbackend.vercel.app/register", { userdata }).then((res) => {
             if (res.data.status) {
 
                   let oldNotifications =

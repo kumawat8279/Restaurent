@@ -21,7 +21,7 @@ export default function Recipes() {
   let [userproducts, setuserproducts] = useState([])
 
   function getproducts() {
-    axios.get("http://localhost:8080/getproducts").then((res) => {
+    axios.get("https://restaurentbackend.vercel.app/getproducts").then((res) => {
       if (res.data.status) {
         setuserproducts(res.data.myallproducts)
         setUserproducts(res.data.myallproducts)
@@ -41,7 +41,7 @@ export default function Recipes() {
 
   let addproduct = (item) => {
 
-    axios.post("http://localhost:8080/allprocart", {
+    axios.post("https://restaurentbackend.vercel.app/allprocart", {
       products: item
     })
       .then((res) => {
@@ -68,7 +68,7 @@ export default function Recipes() {
 
   let addwishlist = (item) => {
 
-    axios.post("http://localhost:8080/addwishlist", { products: item }).then((res) => {
+    axios.post("https://restaurentbackend.vercel.app/addwishlist", { products: item }).then((res) => {
       if (res.data.status) {
         Swal.fire({
           toast: true,

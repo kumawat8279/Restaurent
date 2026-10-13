@@ -17,7 +17,7 @@ export default function Addproducts() {
     let addproduct = (e) => {
         // console.log(products)
 
-        axios.post("http://localhost:8080/addproducts", { products }).then((res) => {
+        axios.post("https://restaurentbackend.vercel.app/addproducts", { products }).then((res) => {
             if (res.data.status) {
                 go("/products")
             }
